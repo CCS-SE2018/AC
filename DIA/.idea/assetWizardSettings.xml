@@ -18,7 +18,8 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="imageAsset" value="$USER_HOME$/Desktop/mannequin.jpg" />
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Desktop/06577c74d96278b.jpg" />
                                       <entry key="theme" value="CUSTOM" />
                                     </map>
                                   </option>
@@ -35,7 +36,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="101" />
+                                                <entry key="scalingPercent" value="64" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -45,10 +46,13 @@
                                   </option>
                                   <option name="values">
                                     <map>
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="ffffff" />
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundImage" value="$USER_HOME$/Desktop/157085-11775965.jpg" />
-                                      <entry key="foregroundLayerName" value="new_mannequin" />
-                                      <entry key="outputName" value="mannequin" />
+                                      <entry key="foregroundImage" value="$USER_HOME$/Desktop/images.png" />
+                                      <entry key="foregroundLayerName" value="new_tshirt" />
+                                      <entry key="legacyIconShape" value="CIRCLE" />
+                                      <entry key="outputName" value="tshirt" />
                                     </map>
                                   </option>
                                 </PersistentState>
