@@ -35,7 +35,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="117" />
+                                                <entry key="scalingPercent" value="101" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -46,9 +46,22 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundImage" value="$USER_HOME$/Desktop/closet.png" />
-                                      <entry key="foregroundLayerName" value="ic_launcher_foreground_closet" />
-                                      <entry key="outputName" value="icon_DIA" />
+                                      <entry key="foregroundImage" value="$USER_HOME$/Desktop/157085-11775965.jpg" />
+                                      <entry key="foregroundLayerName" value="new_mannequin" />
+                                      <entry key="outputName" value="mannequin" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
+                            <entry key="launcherLegacy">
+                              <value>
+                                <PersistentState>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Desktop/closet.png" />
+                                      <entry key="outputName" value="ic_launcher_dia" />
                                     </map>
                                   </option>
                                 </PersistentState>
