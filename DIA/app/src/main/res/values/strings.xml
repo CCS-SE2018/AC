@@ -11,6 +11,7 @@
     <string name="title_activity_manage_clothes">manageClothes</string>
     <string name="title_activity_match_outfit">matchOutfit</string>
     <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_main">Main Menu</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -24,4 +25,25 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="title_activity_sign_up">Sign in</string>
+    <string name="title_activity_delete_clothes">DeleteClothes</string>
+    <string name="title_activity_edit_clothes">EditClothes</string>
+    <string name="title_activity_view_clothes">ViewClothes</string>
+    <string name="title_activity_new_login">newLogin</string>
+    <string name="title_activity_new_sign_up">newSignUp</string>
+    <string name="title_activity_show_all_clothes">showAllClothes</string>
+
+    <array name="type">
+        <item>UPPER</item>
+        <item>LOWER</item>
+        <item>FOOTWEAR</item>
+    </array>
+    <array name="kind">
+        <item>t-shirt</item>
+        <item>tank top</item>
+        <item>sweater</item>
+        <item>polo shirt</item>
+        <item>long sleeves</item>
+        <item>coat/jacket</item>
+    </array>
 </resources>

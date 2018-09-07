@@ -12,4 +12,12 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="gradient" parent="android:Theme.Wallpaper.NoTitleBar">
+        <item name="android:windowBackground">@mipmap/background</item>
+    </style>
+
+    <style name="a" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/background_dark</item>
+    </style>
+
 </resources>

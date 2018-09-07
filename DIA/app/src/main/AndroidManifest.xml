@@ -12,9 +12,10 @@
         android:icon="@mipmap/ic_launcher_foreground_closet"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_foreground_closet"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".newLogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,7 +40,37 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_sign_up" />
+        <activity android:name=".AddClothes" />
+        <activity
+            android:name=".DeleteClothes"
+            android:label="@string/title_activity_delete_clothes"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".EditClothes"
+            android:label="@string/title_activity_edit_clothes"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ViewClothes"
+            android:label="@string/title_activity_view_clothes"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".newSignUp"
+            android:label="@string/title_activity_new_sign_up"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".selectType" />
+        <activity android:name=".showClothe" />
+        <activity android:name=".upperClothes" />
+        <activity android:name=".lowerClothes" />
+        <activity android:name=".footwear"></activity>
     </application>
 
 </manifest>

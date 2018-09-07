@@ -36,7 +36,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="64" />
+                                                <entry key="scalingPercent" value="54" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -49,10 +49,11 @@
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="ffffff" />
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundImage" value="$USER_HOME$/Desktop/images.png" />
-                                      <entry key="foregroundLayerName" value="new_tshirt" />
+                                      <entry key="foregroundImage" value="$USER_HOME$/Desktop/Free-Grunge-Watercolor-Stock-Background-Images.jpeg" />
+                                      <entry key="foregroundLayerName" value="bg" />
                                       <entry key="legacyIconShape" value="CIRCLE" />
-                                      <entry key="outputName" value="tshirt" />
+                                      <entry key="outputName" value="background" />
+                                      <entry key="previewDensity" value="XXXHIGH" />
                                     </map>
                                   </option>
                                 </PersistentState>
