@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "950920420403",
-    "firebase_url": "https://dia-database-a64b9.firebaseio.com",
-    "project_id": "dia-database-a64b9",
-    "storage_bucket": "dia-database-a64b9.appspot.com"
+    "project_number": "426222983686",
+    "firebase_url": "https://diadatabase.firebaseio.com",
+    "project_id": "diadatabase",
+    "storage_bucket": "diadatabase.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:950920420403:android:1b5900fc58a38a8c",
+        "mobilesdk_app_id": "1:426222983686:android:116b17c789161e07",
         "android_client_info": {
-          "package_name": "com.applications.kuyakoya.dia"
+          "package_name": "com.applications.SoftEngProj.dia"
         }
       },
       "oauth_client": [
         {
-          "client_id": "950920420403-notba0ep198upur6vd9a56i4ckp9tgoj.apps.googleusercontent.com",
+          "client_id": "426222983686-tsut8q544if17jv3emol2r7ruoqnrqts.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.applications.kuyakoya.dia",
+            "package_name": "com.applications.SoftEngProj.dia",
             "certificate_hash": "6f36e8ee7d0f45f3217ff8ec4fb7a7a468005a5f"
           }
         },
         {
-          "client_id": "950920420403-gckpm6v101s170ok15lcr5r2vlman7q3.apps.googleusercontent.com",
+          "client_id": "426222983686-hq12set111iqe3kekk7feuphtik6to7e.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDKkad2SlqUbTBgRV8j8tnFw3TXu-Gqwm8"
+          "current_key": "AIzaSyCAjZqpUVKNW1_PZ-m56DXwZgivAwva6SU"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "950920420403-gckpm6v101s170ok15lcr5r2vlman7q3.apps.googleusercontent.com",
+              "client_id": "426222983686-hq12set111iqe3kekk7feuphtik6to7e.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -26,18 +26,20 @@
                 android:src="@drawable/wardrobe"/>
 
             <EditText
+                android:id="@+id/tv_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:ems="10"
+                android:layout_marginTop="70dp"
                 android:background="@android:color/transparent"
-                android:drawablePadding="12dp"
-                android:padding="8dp"
-                android:hint="Username"
-                android:textColorHint="#fff"
-                android:maxLines="1"
                 android:drawableLeft="@drawable/ic_person_black_24dp"
-                android:layout_marginTop="70dp" />
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#fff"
+                android:textColor="#fff"/>
 
             <View
                 android:layout_width="match_parent"
@@ -45,18 +47,20 @@
                 android:background="#f9d7db"/>
 
             <EditText
+                android:id="@+id/tv_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:ems="10"
-                android:drawablePadding="12dp"
-                android:padding="8dp"
-                android:hint="........."
-                android:textColorHint="#fff"
-                android:maxLines="1"
-                android:background="@android:color/transparent"
                 android:layout_marginTop="4dp"
-                android:drawableLeft="@drawable/ic_lock_black_24dp" />
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="........."
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#fff"
+                android:textColor="#fff"/>/>
 
             <View
                 android:layout_width="match_parent"
@@ -64,17 +68,18 @@
                 android:background="#f9d7db" />
 
             <Button
+                android:id="@+id/btn_signup"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
                 android:background="@drawable/background_signup"
-                android:text="Sign Up"
-                android:textColor="#3a6186"
-                android:textAllCaps="false"
-                android:textSize="18dp"
-                android:padding="16dp"
                 android:clickable="true"
-                style="@style/Base.TextAppearance.AppCompat.Body1"
-                android:layout_marginTop="24dp" />
+                android:padding="16dp"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="#3a6186"
+                android:textSize="18dp" />
 
         </LinearLayout>
     </ScrollView>

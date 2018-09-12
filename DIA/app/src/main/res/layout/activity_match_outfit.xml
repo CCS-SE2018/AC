@@ -1,27 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".AddClothes"
     android:background="@drawable/gradient_background"
-    tools:context=".matchOutfit">
+    >
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
+    <ImageView
+        android:id="@+id/iv_upper"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginLeft="151dp"
+        android:layout_marginRight="151dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_lower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shirt_3" />
 
-    </android.support.design.widget.AppBarLayout>
+    <ImageView
+        android:id="@+id/iv_lower"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginLeft="151dp"
+        android:layout_marginRight="151dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_foot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_upper"
+        app:srcCompat="@drawable/pants_1" />
 
-    <include layout="@layout/content_match_outfit" />
+    <ImageView
+        android:id="@+id/iv_foot"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginLeft="151dp"
+        android:layout_marginRight="151dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_lower"
+        app:srcCompat="@drawable/shoe_1" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+    <TextView
+        android:id="@+id/tv_upper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@mipmap/ic_launcher_foreground_new_home" />
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginLeft="181dp"
+        android:layout_marginRight="181dp"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="50dp"
+        android:text="UPPER"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_upper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_upper"
+        app:layout_constraintVertical_bias="1.0" />
 
-</android.support.design.widget.CoordinatorLayout>
+    <TextView
+        android:id="@+id/tv_foot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginLeft="151dp"
+        android:layout_marginRight="151dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="20dp"
+        android:text="FOOTWEAR"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_foot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_foot"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <TextView
+        android:id="@+id/tv_lower"
+        android:layout_width="79dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginLeft="151dp"
+        android:layout_marginRight="151dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="10dp"
+        android:text="LOWER"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_lower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_lower"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <Button
+        android:id="@+id/matchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Match"
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="481dp"
+        tools:ignore="MissingConstraints" />
+
+
+</android.support.constraint.ConstraintLayout>

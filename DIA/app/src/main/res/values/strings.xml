@@ -38,12 +38,29 @@
         <item>LOWER</item>
         <item>FOOTWEAR</item>
     </array>
-    <array name="kind">
+
+    <array name="kind_upper">
         <item>t-shirt</item>
         <item>tank top</item>
         <item>sweater</item>
-        <item>polo shirt</item>
+        <item>polo</item>
+        <item>suit/blazer</item>
         <item>long sleeves</item>
         <item>coat/jacket</item>
+    </array>
+
+    <array name="kind_lower">
+        <item>pants</item>
+        <item>shorts</item>
+        <item>skirts</item>
+    </array>
+
+    <array name="kind_footwear">
+        <item>shoes</item>
+        <item>flipflops</item>
+        <item>sandals</item>
+        <item>boots</item>
+        <item>sneakers</item>
+        <item>heels</item>
     </array>
 </resources>
