@@ -33,6 +33,7 @@ public class AddClothes extends AppCompatActivity {
     TextView textView;
     Spinner spin_type;
     Spinner spin_kind;
+    Spinner spin_available;
     Button btnAdd;
     Button btnChoose;
     ImageView image;
@@ -41,6 +42,7 @@ public class AddClothes extends AppCompatActivity {
     private static final int PICK_IMAGE_REQUEST = 2;
 
 
+    DatabaseReference databaseUsers;
     DatabaseReference databaseClothes;
 
     @Override
@@ -49,12 +51,14 @@ public class AddClothes extends AppCompatActivity {
         setContentView(R.layout.activity_add_clothes);
 
         databaseClothes = FirebaseDatabase.getInstance().getReference("clothes");
+        databaseUsers = FirebaseDatabase.getInstance().getReference("users");
 
         btnAdd = (Button) findViewById(R.id.btn_add);
         btnChoose = (Button) findViewById(R.id.btn_choose);
         textView = (TextView) findViewById(R.id.desc);
         spin_kind = (Spinner) findViewById(R.id.spn_kind);
         spin_type = (Spinner) findViewById(R.id.spn_type);
+        spin_available = (Spinner) findViewById(R.id.spn_available);
         image = (ImageView) findViewById(R.id.addImage);
 
 
@@ -65,6 +69,11 @@ public class AddClothes extends AppCompatActivity {
         adapterType = new ArrayAdapter<CharSequence>(this,android.R.layout.simple_spinner_item,type);
         adapterType.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spin_type.setAdapter(adapterType);
+
+        ArrayAdapter<CharSequence> adapterAvailable =  ArrayAdapter
+                .createFromResource(AddClothes.this, R.array.available,
+                        android.R.layout.simple_spinner_dropdown_item);
+        spin_available.setAdapter(adapterAvailable);
 
         spin_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -106,8 +115,6 @@ public class AddClothes extends AppCompatActivity {
             public void onClick(View view) {
 
                 addClothes();
-                Snackbar.make(view, "Successfully Added!", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
 
                 new Handler().postDelayed(new Runnable() {
                     @Override
@@ -125,16 +132,18 @@ public class AddClothes extends AppCompatActivity {
         String desc = this.textView.getText().toString().trim();
         String type = this.spin_type.getSelectedItem().toString();
         String kind = this.spin_kind.getSelectedItem().toString();
-        String imgPath = this.filePath.toString();
+        String available = this.spin_available.getSelectedItem().toString();
+        String imgPath = this.filePath.getPath();
 
         if(!TextUtils.isEmpty(desc)){
             String id = databaseClothes.push().getKey();
+            String userID;
 
-            clothes clothes = new clothes(id, type, kind, desc, imgPath);
+            clothes clothes = new clothes(id, type, kind, desc, available, imgPath);
 
-            databaseClothes.child(id).setValue(clothes);
+            databaseClothes.child(type).setValue(clothes);
 
-            Toast.makeText(this, "Clothes added", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Successfully Added Item to database", Toast.LENGTH_LONG).show();
         }else{
             Toast.makeText(this, "You should enter a description", Toast.LENGTH_LONG).show();
         }

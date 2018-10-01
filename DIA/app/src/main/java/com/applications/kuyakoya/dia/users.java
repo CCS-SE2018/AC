@@ -5,9 +5,10 @@ public class users {
     String username;
     String password;
 
-
-    public users() {
-
+    public users(){
+        this.userID = userID;
+        this.username = username;
+        this.password = password;
     }
 
     public users(String userID, String username, String password) {

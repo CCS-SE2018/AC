@@ -6,16 +6,18 @@ public class clothes {
     String clothes_type;
     String clothes_kind;
     String clothes_description;
+    String clothes_available;
 
-    public clothes(String userID, String username, String password){
+    public  clothes(){
 
     }
 
-    public clothes(String clothesID, String type, String kind, String desc, String image) {
+    public clothes(String clothesID, String type, String kind, String desc, String available, String image) {
         this.clothesID = clothesID;
         this.clothes_type = type;
         this.clothes_kind = kind;
         this.clothes_description = desc;
+        this.clothes_available = available;
         this.image_Path = image;
     }
 
@@ -37,5 +39,13 @@ public class clothes {
 
     public String getClothes_description() {
         return clothes_description;
+    }
+
+    public String getClothes_available() {
+        return clothes_available;
+    }
+
+    public void setImage_Path(String image_Path) {
+        this.image_Path = image_Path;
     }
 }

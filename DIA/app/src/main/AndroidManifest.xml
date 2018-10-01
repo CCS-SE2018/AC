@@ -6,6 +6,8 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -70,7 +72,10 @@
         <activity android:name=".showClothe" />
         <activity android:name=".upperClothes" />
         <activity android:name=".lowerClothes" />
-        <activity android:name=".footwear"></activity>
+        <activity android:name=".footwear" />
+        <activity
+            android:name="com.applications.SoftEngProj.dia.SampleLogin"
+            android:label="@string/title_activity_sample_login"></activity>
     </application>
 
 </manifest>

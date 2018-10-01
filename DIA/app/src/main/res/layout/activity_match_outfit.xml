@@ -22,7 +22,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/shirt_3" />
+        app:srcCompat="@drawable/shirt_1" />
 
     <ImageView
         android:id="@+id/iv_lower"

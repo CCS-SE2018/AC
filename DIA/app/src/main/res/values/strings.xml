@@ -63,4 +63,11 @@
         <item>sneakers</item>
         <item>heels</item>
     </array>
+
+    <array name="available">
+        <item>YES</item>
+        <item>NO</item>
+    </array>
+    <string name="title_activity_sample">Sign in</string>
+    <string name="title_activity_sample_login">Sign in</string>
 </resources>

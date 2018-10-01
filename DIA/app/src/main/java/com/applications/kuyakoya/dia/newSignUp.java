@@ -22,6 +22,7 @@ public class newSignUp extends AppCompatActivity {
 
     Button signup;
     TextView userName, pw;
+    String userID;
 
     DatabaseReference databaseUsers;
 
@@ -62,11 +63,11 @@ public class newSignUp extends AppCompatActivity {
         String password = this.pw.getText().toString();
 
         if(!TextUtils.isEmpty(username) && !TextUtils.isEmpty(password)){
-            String userID = databaseUsers.push().getKey();
+            userID = databaseUsers.push().getKey();
 
             users users = new users(userID, username, password);
 
-            databaseUsers.child(userID).setValue(users);
+            databaseUsers.child(username).setValue(users);
 
             Toast.makeText(this, "Users added", Toast.LENGTH_LONG).show();
         }else{

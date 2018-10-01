@@ -8,39 +8,51 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ListView;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class DeleteClothes extends AppCompatActivity {
 
-    ImageView imageview;
+    ListView listView;
+    List<clothes> clothesList;
+    DatabaseReference databaseClothes;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delete_clothes);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
-        imageview = (ImageView) findViewById(R.id.iv_upper);
-        imageview.setOnClickListener(new View.OnClickListener() {
+        listView = (ListView) findViewById(R.id.listViewClothesDelete);
+        databaseClothes = FirebaseDatabase.getInstance().getReference("clothes");
+        clothesList = new ArrayList<>();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        databaseClothes.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(DeleteClothes.this, upperClothes.class);
-                startActivity(intent);
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for(DataSnapshot clothesSnapshot: dataSnapshot.getChildren()){
+                    clothes Clothes = clothesSnapshot.getValue(clothes.class);
+                    clothesList.add(Clothes);
+                }
+
+                ListLayoutDelete ClothesAdapter = new ListLayoutDelete(DeleteClothes.this, clothesList);
+                listView.setAdapter(ClothesAdapter);
             }
-        });
-        imageview = (ImageView) findViewById(R.id.iv_lower);
-        imageview.setOnClickListener(new View.OnClickListener() {
+
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(DeleteClothes.this, lowerClothes.class);
-                startActivity(intent);
-            }
-        });
-        imageview = (ImageView) findViewById(R.id.iv_foot);
-        imageview.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(DeleteClothes.this, footwear.class);
-                startActivity(intent);
+            public void onCancelled(DatabaseError databaseError) {
+
             }
         });
     }

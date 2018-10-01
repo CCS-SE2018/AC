@@ -31,7 +31,7 @@ public class matchOutfit extends AppCompatActivity{
 
 //        collageImage =(ImageView)findViewById(R.id.combineView);
 
-        Button match = (Button)findViewById(R.id.matchButton);
+        match = (Button)findViewById(R.id.matchButton);
         match.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view) {
                 Bitmap top = BitmapFactory.decodeResource(getResources(),R.id.iv_upper);
@@ -41,7 +41,7 @@ public class matchOutfit extends AppCompatActivity{
                 Bitmap merged = createSingleImageFromMultipleImages(top, bottom,footwear);
                 collageImage.setImageBitmap(merged);
 
-                collageImage.setOnClickListener(new View.OnClickListener() {
+                match.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         openMatchClothes();
@@ -76,13 +76,13 @@ public class matchOutfit extends AppCompatActivity{
             public void onClick(View view) {
                 //
                 if(imgView.getTag().equals(1)){
-                    imgView.setImageResource(R.drawable.shirt_1);
+                    imgView.setImageResource(R.drawable.pants_1);
                     imgView.setTag(2);
                 }else if (imgView.getTag().equals(2)){
-                    imgView.setImageResource(R.drawable.shirt_2);
+                    imgView.setImageResource(R.drawable.pants_2);
                     imgView.setTag(3);
                 }else{
-                    imgView.setImageResource(R.drawable.shirt_3);
+                    imgView.setImageResource(R.drawable.pants_3);
                     imgView.setTag(1);
                 }
             }
@@ -95,13 +95,13 @@ public class matchOutfit extends AppCompatActivity{
             public void onClick(View view) {
                 //
                 if(imagesView.getTag().equals(1)){
-                    imagesView.setImageResource(R.drawable.shirt_1);
+                    imagesView.setImageResource(R.drawable.shoe_1);
                     imagesView.setTag(2);
                 }else if (imagesView.getTag().equals(2)){
-                    imagesView.setImageResource(R.drawable.shirt_2);
+                    imagesView.setImageResource(R.drawable.shoe_2);
                     imagesView.setTag(3);
                 }else{
-                    imagesView.setImageResource(R.drawable.shirt_3);
+                    imagesView.setImageResource(R.drawable.shoe_3);
                     imagesView.setTag(1);
                 }
             }
